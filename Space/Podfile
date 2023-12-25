@@ -1,0 +1,18 @@
+platform :ios, '11.0'
+use_frameworks!
+
+workspace 'Space'
+
+target 'SpaceClient' do
+  project 'SpaceClient/SpaceClient.xcodeproj'
+  pod 'KRProgressHUD'
+  pod 'Kingfisher'
+  pod 'Alamofire'
+  # SpaceClient projesine özel diğer bağımlılıkları ekleyin
+end
+
+target 'SpaceAPI' do
+  project 'SpaceAPI/SpaceAPI.xcodeproj'
+  pod 'Alamofire'
+  # SpaceClient projesine özel diğer bağımlılıkları ekleyin
+end
